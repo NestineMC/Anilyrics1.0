@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+<style>
+body{
+        background-color: #87cefa;
+        color: black;
+    }
+.img-circle{
+                border-top-left-radius: 50% 50%;
+                border-top-right-radius: 50% 50%;
+                border-bottom-right-radius: 50% 50%;
+                border-bottom-left-radius: 50% 50%;
+            }
+.button {
+            background-color: #87cefa;
+            font: 2.5em Buxton Sketch;
+            border: none;
+            color: black;
+            padding: 2px 2px;
+            text-align: center;
+            text-decoration: none;
+            display: Buxton Sketch;
+            font-size: 25px;
+        }
+</style>
+</head>
+<body>
+    <p align ="left">
+    <input type="submit" id="title" class="button"/></a><br>
+    <HR color="black" Width = 100%><br>
+    <input type="submit" id="lyrics" class="button"/></a><br>
+<script type="text/javascript">
+        document.getElementById('title').value = window.localStorage.getItem('title')
+        document.getElementById('lyrics').value = window.localStorage.getItem('lyrics')
+</script>
+
+</body>
+</html>
